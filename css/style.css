@@ -1,0 +1,131 @@
+/* global setting */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: medium;
+    /* color: #000000; */
+    color: #ffffff;
+}
+
+/* body settings */
+body{
+    /* use flex */
+    display: flex;
+    justify-content: center;
+    /* background photo and settings */
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+/* main section setting for show contents */
+main{
+    /* positions and sizes */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 300px;
+    width: 50vw;
+    padding: 20px;
+    /* use flex wrap */
+    display: flex;
+    flex-wrap: wrap;
+    /* border radius and color */
+    border-radius: 30px;
+    /* box-shadow: rgb(126, 216, 201) 0px 0px 0px 5px; */
+    box-shadow: rgba(61, 145, 163, 0.7) 0px 0px 0px 5px;
+    /* background image */
+    background-image: url("../assets/main.webp");
+}
+
+/* main section contents for show movies */
+.section{
+    /* use grid to divide sections */
+    display: grid;
+    /* leftDiv and rightDiv length */
+    grid-template-columns: 450px max-content;
+    /* gap and padding */
+    grid-gap: 4px;
+    padding: 4px;
+}
+/* main section contents for starships info */
+.section-starship{
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) minmax(auto, 300px);
+    grid-gap: 4px;
+    padding: 4px;
+
+}
+
+/* top section */
+.section div.top, .section-starship div.top{
+    grid-column: 1/3;
+}
+
+/* rightDiv and leftDiv  */
+.section div.right, .section-starship div.right{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    /* align left */
+    align-items: flex-start;
+    line-height: 20pt;}
+.section div.left, .section-starship div.left{
+    /* border: 1px solid green;  */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    /* align right */
+    align-items: flex-end;
+    line-height: 20pt;
+    /* text overflow auto */
+    overflow: auto;}
+
+/* buttons style */
+button, .submit-button{
+    width: auto;
+    height: 25px;
+    /* transparent buttons */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    justify-content: flex-end;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+button {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-size: medium;
+}
+
+
+p{
+    /* space between paragraphs */
+    margin: 10px;
+}
+p2{
+    display: list-item;
+    align-items: center;
+}
+
+/* pagination for display page numbers */
+.pagination {
+    display: inline-block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/* headers */
+h1{
+    color: #550000;
+}
+
